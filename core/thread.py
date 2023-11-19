@@ -1021,7 +1021,7 @@ class Thread:
                 return stream.read()
 
         for i in message.stickers:
-            if i.format in (discord.StickerFormatType.png, discord.StickerFormatType.apng):
+            if i.format in (discord.StickerFormatType.png, discord.StickerFormatType.apng, discord.StickerFormatType.gif):
                 images.append((i.url, i.name, True))
             elif i.format == discord.StickerFormatType.lottie:
                 # save the json lottie representation
